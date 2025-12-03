@@ -16,7 +16,7 @@ model Task {
   description String
   status      TaskStatus
   priority    Priority
-  dueDate     DateTime @default(now())
+  dueDate     DateTime ?
   assignedTo  String?
   createdAt   DateTime  @default(now())
   updatedAt   DateTime  @updatedAt
